@@ -3,73 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Bootstrap Dasar</title>
+    <title>Belajar Bootstrap Dasar Lengkap</title>
 
     <!-- Bootstrap Offline -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body class="bg-light">
 
     <div class="container py-5">
 
-        <!-- Judul -->
-        <h1 class="text-center fw-bold mb-4">Belajar Bootstrap Dasar</h1>
+        <h1 class="text-center fw-bold mb-5">Belajar Bootstrap Dasar (Lengkap)</h1>
 
-        <!-- Typography -->
-        <h2 class="mt-4">1. Typography</h2>
-        <p class="lead">Ini contoh teks lead untuk paragraf yang lebih menonjol.</p>
+        <!-- 1. Typography -->
+        <h2>1. Typography</h2>
+        <p class="lead">Ini contoh teks lead.</p>
+        <p class="fw-bold">Teks bold / tebal</p>
+        <p class="fst-italic">Teks miring / italic</p>
 
-        <!-- Background & Color -->
-        <h2 class="mt-4">2. Background & Color</h2>
-        <div class="bg-primary text-white p-3 mb-2 rounded">Background Primary</div>
-        <div class="bg-danger text-white p-3 rounded">Background Danger</div>
+        <!-- 2. Breakpoint -->
+        <h2 class="mt-4">2. Breakpoint</h2>
+        <div class="p-3 bg-info text-white d-sm-none">Tampil hanya di layar kecil (HP)</div>
+        <div class="p-3 bg-secondary text-white d-none d-md-block">Tampil di layar > medium</div>
 
-        <!-- Text -->
-        <h2 class="mt-4">3. Text Alignment</h2>
-        <p class="text-center">Teks ini di tengah</p>
-        <p class="text-end">Teks ini di kanan</p>
+        <!-- 3. Background & Color -->
+        <h2 class="mt-4">3. Background & Color</h2>
+        <div class="bg-primary text-white p-3 rounded">Background primary</div>
 
-        <!-- Spacing -->
-        <h2 class="mt-4">4. Spacing</h2>
-        <div class="p-4 bg-warning rounded mb-3">Padding 4</div>
-        <div class="mt-5 bg-info p-3 rounded">Margin Top 5</div>
+        <!-- 4. Text -->
+        <h2 class="mt-4">4. Text</h2>
+        <p class="text-center">Tengah</p>
+        <p class="text-end">Kanan</p>
+        <p class="text-uppercase">Uppercase</p>
 
-        <!-- Border -->
-        <h2 class="mt-4">5. Border</h2>
-        <div class="border border-primary p-3 mb-3 rounded">Border Primary</div>
+        <!-- 5. Spacing -->
+        <h2 class="mt-4">5. Spacing</h2>
+        <div class="mt-4 p-4 bg-warning">Margin top 4 + padding 4</div>
 
-        <!-- Shadow -->
-        <h2 class="mt-4">6. Shadow</h2>
-        <div class="p-4 shadow bg-white rounded">Kotak dengan shadow</div>
+        <!-- 6. Border -->
+        <h2 class="mt-4">6. Border</h2>
+        <div class="border border-success p-3 rounded">Contoh border hijau</div>
 
-        <!-- Image -->
-        <h2 class="mt-4">7. Gambar</h2>
-        <img src="img/foto.png" class="img-fluid">
+        <!-- 7. Sizing -->
+        <h2 class="mt-4">7. Sizing</h2>
+        <div class="bg-primary p-3 text-white w-50">Lebar 50%</div>
+        <div class="bg-danger p-3 text-white h-25 mt-2">Tinggi contoh (h-25)</div>
 
-        <!-- Table -->
-        <h2 class="mt-4">8. Table</h2>
-        <table class="table table-striped table-hover">
+        <!-- 8. Shadow -->
+        <h2 class="mt-4">8. Shadow</h2>
+        <div class="shadow p-3 bg-white rounded">Shadow default</div>
+
+        <!-- 9. Visibility -->
+        <h2 class="mt-4">9. Visibility</h2>
+        <p class="visible">Ini terlihat</p>
+        <p class="invisible">Ini tak terlihat, tapi masih ada space</p>
+
+        <!-- 10. Opacity -->
+        <h2 class="mt-4">10. Opacity</h2>
+        <div class="bg-dark text-white p-3 opacity-50">Opacity 50%</div>
+
+        <!-- 11. Link -->
+        <h2 class="mt-4">11. Link</h2>
+        <a href="#" class="link-primary">Link warna primary</a>
+
+        <!-- 12. Display -->
+        <h2 class="mt-4">12. Display</h2>
+        <div class="d-inline bg-info text-white p-2">Inline</div>
+        <div class="d-block bg-danger text-white p-2 mt-1">Block</div>
+
+        <!-- 13. Overflow -->
+        <h2 class="mt-4">13. Overflow</h2>
+        <div class="overflow-auto p-2 border" style="height:60px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro laborum beatae.
+        </div>
+
+        <!-- 14. Position -->
+        <h2 class="mt-4">14. Position</h2>
+        <div class="position-relative bg-light border p-4">
+            <div class="position-absolute top-0 start-0 bg-primary text-white px-2">Absolute</div>
+        </div>
+
+        <!-- 15. Quick Position -->
+        <h2 class="mt-4">15. Quick Position</h2>
+        <div class="position-relative bg-secondary text-white p-5">
+            <div class="position-absolute top-50 start-50 translate-middle bg-dark text-white p-2">Center</div>
+        </div>
+
+        <!-- 16. Vertical Alignment -->
+        <h2 class="mt-4">16. Vertical Alignment</h2>
+       <table style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-bottom">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</table>
+
+      <!-- 17. Z-Index -->
+<h2 class="mt-5">17. Z-Index</h2>
+
+<div class="position-relative mb-5" style="height: 120px;">
+    <div class="position-absolute bg-primary text-white p-3 rounded"
+         style="z-index: 1; left: 20px; top: 20px;">
+        Z-1 (di bawah)
+    </div>
+
+    <div class="position-absolute bg-danger text-white p-3 rounded"
+         style="z-index: 3; left: 120px; top: 40px;">
+        Z-3 (di atas)
+    </div>
+</div>
+
+
+
+<!-- 18. Interaction -->
+<h2 class="mt-4">18. Interaction</h2>
+
+<!-- Contoh teks yang TIDAK bisa di-select -->
+<p class="user-select-none bg-warning p-3 rounded mb-3">
+    Contoh: Teks ini tidak bisa di-select (user-select-none)
+</p>
+
+<!-- Contoh teks normal (bisa di-select) -->
+<p class="bg-light p-3 rounded border">
+    Contoh: Teks ini bisa di-select seperti biasa
+</p>
+
+<!-- Tombol normal -->
+<button class="btn btn-primary mt-3 me-3">
+    Tombol normal (bisa diklik)
+</button>
+
+<!-- Tombol yang TIDAK bisa diklik -->
+<button class="btn btn-secondary mt-3 pe-none">
+    Tombol ini tidak bisa diklik (pe-none)
+</button>
+
+
+        <!-- 19. Image -->
+        <h2 class="mt-4">19. Image</h2>
+        <img src="img/foto.png" class="img-fluid rounded">
+
+        <!-- 20. Figure -->
+        <h2 class="mt-4">20. Figure</h2>
+        <figure class="figure">
+            <img src="img/logo.png" class="figure-img img-fluid rounded" alt="contoh">
+            <figcaption class="figure-caption">ini adalah logo</figcaption>
+        </figure>
+
+        <!-- 21. Object Fit -->
+        <h2 class="mt-4">21. Object Fit</h2>
+        <div style="width:200px; height:120px;">
+            <img src="img/foto.png" class="w-100 h-100 object-fit-cover rounded">
+        </div>
+
+        <!-- 22. Table -->
+        <h2 class="mt-4">22. Table</h2>
+        <table class="table table-bordered">
             <thead class="table-dark">
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Kelas</th>
-                </tr>
+                <tr><th>No</th><th>Nama</th></tr>
             </thead>
             <tbody>
-                <tr><td>1</td><td>Ulfah</td><td>XII PPLG 1</td></tr>
-                <tr><td>2</td><td>Devi</td><td>XII PPLG 2</td></tr>
+                <tr><td>1</td><td>Ulfah</td></tr>
+                <tr><td>2</td><td>Devi</td></tr>
             </tbody>
         </table>
 
-        <!-- Icon -->
-        <h2 class="mt-4">9. Icon (CDN)</h2>
-        <p><i class="bi bi-heart-fill text-danger"></i> Contoh Icon Bootstrap</p>
+        <!-- 23. Icon -->
+        <h2 class="mt-4">23. Icon</h2>
+        <i class="bi bi-star-fill text-warning fs-3"></i>
+
+        <!-- 24. Color Mode -->
+        <h2 class="mt-4">24. Color Mode</h2>
+        <div data-bs-theme="dark" class="p-3 bg-dark text-white rounded">
+            Mode dark aktif di box ini
+        </div>
 
     </div>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </body>
 </html>
